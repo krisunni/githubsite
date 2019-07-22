@@ -70,33 +70,37 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="job in experience" :key="job.description">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">{{ job.position }}</h3>
-              <div class="subheading mb-3">{{ job.company }}</div>
-              <p>{{ job.description }}</p>
-              <p v-if="job.projects">Notable Projects</p>
-              <div class="card" id="projects">
-                <div v-for="(project, index) in job.projects" :key="project.name" class="card">
-                  <div class="card-header">
-                    <div class="panel-title">
-                      <a data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+index">{{project.name}}</a>
-                    </div>
-                  </div>
-                  <div :id="'collapse-'+index" class="panel-collapse collapse in">
-                    <div class="card-body">
-                      <div class="resume-item d-flex flex-column flex-md-row">
-                        <p v-if="project.description" class="p-1 card-subtitle"> {{ project.description }}</p>
-                        <span v-if="project.startDate" class="p-1 resume-date text-md-right">{{ project.startDate }} - {{ project.endDate }}</span>
+              <div  class="d-flex justify-content-between">
+                <h3 class="position">{{ job.position }}</h3>
+                <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
+              </div>
+              <div class="d-flex justify-content-start">{{ job.company }}</div>
+              <div>
+                <p>{{ job.description }}</p>
+                <p v-if="job.projects">Notable Projects</p>
+                <div class="card" id="projects">
+                  <div v-for="(project, index) in job.projects" :key="project.name" class="card">
+                    <a data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+index" class="card-header">
+                    <div class="d-flex justify-content-between">
+                      <div class="panel-title">
+                        <span data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+index">{{project.name}}</span>
                       </div>
-                      <ul class="fa-ul mb-0">
-                        <li v-for="keyTask in project.keyTasks" :key="keyTask"  class="card-text"><i class="fa-li fa fa-check-square"></i>{{ keyTask }}</li>
-                      </ul>
+                      <span  :id="'collapse-'+index" v-if="project.startDate" class="panel-collapse collapse out">{{ project.startDate }} - {{ project.endDate }}</span>
+                    </div>
+                    </a>
+                    <div :id="'collapse-'+index" class="panel-collapse collapse in">
+                      <div class="card-body">
+                        <div class="resume-item d-flex flex-column flex-md-row">
+                          <p v-if="project.description" class="p-1 card-subtitle"> {{ project.description }}</p>
+                        </div>
+                        <ul class="fa-ul mb-0">
+                          <li v-for="keyTask in project.keyTasks" :key="keyTask"  class="card-text"><i class="fa-li fa fa-check-square"></i>{{ keyTask }}</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div  class="resume-date text-md-right">
-              <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
             </div>
           </div>
         </div>
@@ -104,7 +108,7 @@
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
+        <div class="">
           <h2 class="mb-5">Education</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -132,7 +136,7 @@
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
+        <div class="">
           <h2 class="mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
@@ -189,6 +193,10 @@
             <li>
               <i class="fa-li fa fa-check"></i>
               Agile Development, Kanbaan &amp; Scrum
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Integration/SDLC
             </li>
           </ul>
         </div>

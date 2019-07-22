@@ -106,12 +106,44 @@
         {
           "name": "Net New Money",
           "keyTasks": [
-            "Converted a COBAL application that calculates the Net assets at UBS Bank for daily reporting and down steam systems."
-            ,"Used Java 8 Lambdas and steam API to streamline processing of large files."
-            ,"Developed, tested and deployed Java to run on IBM Mainframe with a given MIPS threshold."
+            "Converted a COBAL application that calculates the Net assets at UBS Bank for daily reporting and down steam systems.",
+            "Used Java 8 Lambdas and steam API to streamline processing of large files.",
+            "Developed, tested and deployed Java to run on IBM Mainframe with a given MIPS threshold."
           ]
+        },
+        {
+          "name": "Partnership Portal",
+          "keyTasks": [
+            "Designed and implemented External Facing Single Page Web Application Web Application. Lead the front end development role for UBS’s Content Management Portal for Partners and Vendors.",
+            "Integrated with Spring Boot ensured data contracts where sufficient with backend.",
+            "Developed using AngularJS, Bootstrap, Less to create mobile responsive web pages."
+          ]
+        },
+        {
+          "name": "Zeus Credit Risk Integration and Calculator",
+          "description": "Developed data-loaders to Credit Risk calculators and integrate with Java calculators and Data aggregators."
+        },
+        {
+          "name": "ETL for Comprehensive Capital Analysis and Review (CCAR)",
+          "description": "Project descriptionDeveloped ETL process for CCAR processing using in house Java based ETL. Worked with Data Scientist to ensure data is properly formatted."
         }
       ]
+    },
+    {
+      "position": "Intermediate Software Developer",
+      "company": "Fruit of the Loom, Inc., Bowling Green, KY, U.S.A",
+      "startDate": "October 2012",
+      "endDate": "June 2015",
+      "description": "Developed and maintained integration solutions for the middleware team at world headquarters. Implemented best practices and standard operating procedures for Oracle SOA Suite. Implementing integration solutions for Oracle Enterprise Resource Planning (ERP) of the Vanity Fair division. Strengthened and designed reusable interfaces for using pub-sub architecture using IBM MQ and Oracle SOA Suite inbuilt JMS. Worked with the EBS Performance Enhancement Team towards optimizing DB usage via AWR reports and PL/SQL profilers."
+    },
+    {
+      "position": "Software Developer",
+      "company": "Department of Engineering, WKU, Bowling Green, KY, U.S.A",
+      "startDate": "May 2011",
+      "endDate": "August 2012",
+      "description": "Developed a bi-directional front-end application to operate the Disposable Remotely Operated Submarine (DROS). Developed software for microcontroller in a submarine to drive and capture camera and navigation. Managed the Prius Project. Designed a standalone battery monitoring system on National Instruments CompactRIO to capture and save battery information."
     }
   ]
 }
+
+
