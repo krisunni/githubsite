@@ -79,16 +79,16 @@
                 <p>{{ job.description }}</p>
                 <p v-if="job.projects">Notable Projects</p>
                 <div class="card" id="projects">
-                  <div v-for="(project, index) in job.projects" :key="project.name" class="card">
-                    <a data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+index" class="card-header">
+                  <div v-for="(project, index) in job.projects" :key="project.id" class="card">
+                    <a data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+project.id+index" class="card-header">
                     <div class="d-flex justify-content-between">
                       <div class="panel-title">
-                        <span data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+index">{{project.name}}</span>
+                        <span data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+project.id+index">{{project.name}}</span>
                       </div>
-                      <span  :id="'collapse-'+index" v-if="project.startDate" class="panel-collapse collapse out">{{ project.startDate }} - {{ project.endDate }}</span>
+                      <span  :id="'collapse-'+project.id+index" v-if="project.startDate" class="panel-collapse collapse out">{{ project.startDate }} - {{ project.endDate }}</span>
                     </div>
                     </a>
-                    <div :id="'collapse-'+index" class="panel-collapse collapse in">
+                    <div :id="'collapse-'+project.id+index" class="panel-collapse collapse in">
                       <div class="card-body">
                         <div class="resume-item d-flex flex-column flex-md-row">
                           <p v-if="project.description" class="p-1 card-subtitle"> {{ project.description }}</p>

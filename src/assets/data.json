@@ -14,6 +14,7 @@
       "endDate": "Present",
       "projects": [
         {
+          "id": "mep",
           "name": "MetaData Exchange Platform (MEP)",
           "startDate": "August 2018",
           "endDate": "Present",
@@ -29,6 +30,7 @@
           ]
         },
         {
+          "id": "fidelity1",
           "name": "Fidelity - Compliance and Technology Group, Boston, MA, USA",
           "startDate": "January 2019",
           "endDate": "June 2019",
@@ -40,6 +42,7 @@
           ]
         },
         {
+          "id": "fidelity2",
           "name": "Fidelity - Financial Institution Gro, Providence, RI, USA",
           "startDate": "January 2019",
           "endDate": "June 2019",
@@ -53,18 +56,21 @@
           ]
         },
         {
+          "id": "schoolsFirst",
           "name": "SchoolsFirst Federal Credit Union Santa Ana, CA, U.S.A",
           "startDate": "January 2019",
           "endDate": "March 2019",
           "description": "Designed and Developed integration from Dundas BI Server to Alation. Leveraging Neo4j to show lineage from Dundas BI"
         },
         {
+          "id": "pfizer",
           "name": "Pfizer, New York City, NY , U.S.A",
           "startDate": "January 2019",
           "endDate": "March 2019",
           "description": "Designed and Developed Integration connector to take Dashboard previews and Metadata from TIBCO Spotfire to Alation. Worked with Pfizer and Alation Engineering teams to gather requirements and develop production ready solution. Worked with business stakeholders to install the connector in production environment and success of the platform."
         },
         {
+          "id": "bose",
           "name": "Bose Corporation, Framingham, MA, USA",
           "startDate": "March 2019",
           "endDate": "March 2019",
@@ -82,6 +88,7 @@
           ]
         },
         {
+          "id": "axa",
           "name": "AXA XL Insurance, New York, USA",
           "startDate": "November 2018",
           "endDate": "January 2019",
@@ -104,6 +111,7 @@
       "endDate": "October 2016",
       "projects": [
         {
+          "id": "nwm",
           "name": "Net New Money",
           "keyTasks": [
             "Converted a COBAL application that calculates the Net assets at UBS Bank for daily reporting and down steam systems.",
@@ -112,6 +120,7 @@
           ]
         },
         {
+          "id": "partnershipPortal",
           "name": "Partnership Portal",
           "keyTasks": [
             "Designed and implemented External Facing Single Page Web Application Web Application. Lead the front end development role for UBS’s Content Management Portal for Partners and Vendors.",
@@ -120,10 +129,12 @@
           ]
         },
         {
+          "id": "zeus",
           "name": "Zeus Credit Risk Integration and Calculator",
           "description": "Developed data-loaders to Credit Risk calculators and integrate with Java calculators and Data aggregators."
         },
         {
+          "id": "ccar",
           "name": "ETL for Comprehensive Capital Analysis and Review (CCAR)",
           "description": "Project descriptionDeveloped ETL process for CCAR processing using in house Java based ETL. Worked with Data Scientist to ensure data is properly formatted."
         }
