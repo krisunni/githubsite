@@ -45,7 +45,7 @@
           <p class="mb-5">{{ aboutMe }}</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
-              <a  target="_blank" href="https://www.linkedin.com/in/kunnikannan">
+              <a target="_blank" href="https://www.linkedin.com/in/kunnikannan">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -53,7 +53,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a  target="_blank"  href="https://github.com/krisunni">
+              <a target="_blank" href="https://github.com/krisunni">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -70,7 +70,7 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="job in experience" :key="job.description">
             <div class="resume-content mr-auto">
-              <div  class="d-flex justify-content-between">
+              <div class="d-flex justify-content-between">
                 <h3 class="position">{{ job.position }}</h3>
                 <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
               </div>
@@ -80,13 +80,15 @@
                 <p v-if="job.projects">Notable Projects</p>
                 <div class="card" id="projects">
                   <div v-for="(project, index) in job.projects" :key="project.id" class="card">
-                    <a data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+project.id+index" class="card-header">
-                    <div class="d-flex justify-content-between">
-                      <div class="panel-title">
-                        <span data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+project.id+index">{{project.name}}</span>
+                    <a data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+project.id+index"
+                       class="card-header">
+                      <div class="d-flex justify-content-between">
+                        <div class="panel-title">
+                          <span data-toggle="collapse" data-parent="#projects" :href="'#collapse-'+project.id+index">{{project.name}}</span>
+                        </div>
+                        <span :id="'collapse-'+project.id+index" v-if="project.startDate"
+                              class="panel-collapse collapse out">{{ project.startDate }} - {{ project.endDate }}</span>
                       </div>
-                      <span  :id="'collapse-'+project.id+index" v-if="project.startDate" class="panel-collapse collapse out">{{ project.startDate }} - {{ project.endDate }}</span>
-                    </div>
                     </a>
                     <div :id="'collapse-'+project.id+index" class="panel-collapse collapse in">
                       <div class="card-body">
@@ -94,7 +96,10 @@
                           <p v-if="project.description" class="p-1 card-subtitle"> {{ project.description }}</p>
                         </div>
                         <ul class="fa-ul mb-0">
-                          <li v-for="keyTask in project.keyTasks" :key="keyTask"  class="card-text"><i class="fa-li fa fa-check-square"></i>{{ keyTask }}</li>
+                          <li v-for="keyTask in project.keyTasks" :key="keyTask" class="card-text">
+                            <i class="fa-li fa fa-check-square"></i>
+                            <div>{{ keyTask }}</div>
+                          </li>
                         </ul>
                       </div>
                     </div>
